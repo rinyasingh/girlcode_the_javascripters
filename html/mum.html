@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css-grid.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Mumz</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="center name welcome">
+            <p class="errorMessages"></p>
+
+            <img src="../images/Mumz Wiki.png" alt="">
+            <p class="gray">Please enter your name and age below :</p>
+            <input type="text" id="brName" placeholder="Enter your name"><br>
+            <input type="number" min="13" max="99" id="brAge" placeholder="Enter your age"><br>
+            <button id="btnInfo" onclick="greetUsers()""><a class=" white" href="#symptoms">Send</a></button>
+        </div>
+
+
+
+        <div class="center selectSymptoms welcome" id="symptoms">
+            <img src="../images/Mumz Wiki.png" alt="">
+            <p class="greetUser col-4-sm center"></p>
+
+            <p class="gray">Please select your symptoms below :</p>
+            <p class="errorMessages"></p>
+            <input id="chestPain" name="chestPain" type="checkbox"><label>Chest Pain</label>
+            <input id="shortBreath" name="shortBreath" type="checkbox"><label>Shortness of breath</label>
+            <input id="nipple" name="nipple" type="checkbox"><label>Nipple discharge</label>
+            <input id="dimpling" name="dimpling" type="checkbox"><label>Skin dimpling</label><br>
+            <input id="fatigue" name="fatigue" type="checkbox"><label>Fatigue</label>
+            <input id="nausea" name="nausea" type="checkbox"><label>Nausea</label>
+            <input id="backPain" name="backPain" type="checkbox"><label>Back pain</label>
+            <input id="lossInterest" name="lossInterest" type="checkbox"><label>Loss of interest</label><br>
+            <input id="oversleep" name="oversleep" type="checkbox"><label>Oversleping</label>
+            <input id="uncontrollable" name="uncontrollable" type="checkbox"><label>Uncontrollable feelings</label>
+            <input id="painfulPeriods" name="painfulPeriods" type="checkbox"><label>Painful periods</label>
+            <input id="excessiveBleed" name="excessiveBleed" type="checkbox"><label>Excessive bleeding</label><br>
+            <input id="weightGain" name="weightGain" type="checkbox"><label>Weight gain</label>
+            <input id="dryVag" name="dryVag" type="checkbox"><label>Vaginal dryness</label>
+            <input id="difficultBreathing" name="difficultBreathing" type="checkbox"><label>Difficulty breathing</label>
+            <input id="apetiteLoss" name="apetiteLoss" type="checkbox"><label>Loss of appetite</label><br>
+            <input id="tenderness" name="tenderness" type="checkbox"><label>Tenderness</label>
+            <input id="dieting" name="dieting" type="checkbox"><label>Frequent dieting</label>
+            <input id="cramps" name="cramps" type="checkbox"><label>Stomach cramps</label><br>
+            <input id="bonding" name="bonding" type="checkbox"><label>Trouble bonding with baby</label>
+            <input id="sleepTrouble" name="sleepTrouble" type="checkbox"><label>Trouble sleeping</label>
+            <input id="irregular" name="irregular" type="checkbox"><label>Irregular Heartbeat</label>
+            <input id="irritability" name="irritability" type="checkbox"><label>Irritability</label><br>
+            <button id="btnSymptoms" onclick="getSymptoms()"><a class="white" href="#bookings">Send</a></button>
+        </div>
+
+        <div class="div center  welcome" id="bookings">
+            <img src="../images/Mumz Wiki.png" alt="">
+            <p class="center col-4-sm  diagnosis"></p>
+            <a href="./bookings.html">Proceed to Doctors Page</a>
+        </div>
+
+
+    </section>
+    <script src="../js/questions.js"></script>
+</body>
+
+</html>

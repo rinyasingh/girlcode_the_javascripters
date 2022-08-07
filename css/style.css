@@ -1,0 +1,179 @@
+.image a {
+    background-color:tomato;
+    font-weight:  lighter;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.bold {
+    font-weight: bold;
+}
+.welcome {
+    display: block;
+    margin: 30px;
+}
+
+.welcome p {
+    font-size: small;
+    /* font-weight: bold; */
+}
+
+.welcome img {
+    width: 40%;
+}
+
+.welcome a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding: 15px;
+    font-size: small;
+    /* font-weight: bold; */
+    color: white;
+    background-color: tomato;
+}
+
+.greeting p {
+    font-size: small;
+    font-weight: bolder;
+}
+
+
+.greeting input {
+    padding: 10px;
+    width: 150px;
+    border: 1px solid #333447;
+    border-radius: 0px;
+    color : #333447;
+    font-weight:  lighter;
+    margin: 10px;
+}
+
+.greeting button {
+    padding: 10px;
+    width: 150px;
+    border: 0;
+    border-radius: 0px;
+    background-color:tomato;
+    font-weight:  lighter;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px
+}
+
+.name p{
+    font-size: small;
+    font-weight: bold;
+}
+
+.name input{
+    padding: 10px;
+    width: 150px;
+    border: 1px solid #333447;
+    border-radius: 0px;
+    color : #333447;
+    font-weight:  lighter;
+    margin: 10px;
+}
+
+.name button {
+    padding: 15px;
+    width: 150px;
+    border: 0;
+    border-radius: 0px;
+    background-color:tomato;
+    font-weight:  lighter;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px
+}
+
+.selectSymptoms p{
+    font-size: small;
+    font-weight: bold;
+}
+
+.selectSymptoms label{
+    padding: 10px;
+    width: 150px;
+    /* border: 1px solid #333447; */
+    border-radius: 0px;
+    color : #333447;
+    font-size: small;
+    font-weight:  lighter;
+    margin: 10px;
+}
+
+.selectSymptoms button {
+    padding: 15px;
+    width: 150px;
+    border: 0;
+    border-radius: 0px;
+    background-color:tomato;
+    font-weight:  lighter;
+    text-transform: uppercase;
+    color: white;
+    margin: 10px
+}
+
+.errorMessages {
+    text-align: center;
+    color: red;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.gray {
+    color: lightslategray
+}
+
+.welcome .greetUser {
+    font-weight: lighter;
+    color: gray
+}
+
+.welcome .diagnosis {
+    font-weight: lighter;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+#bookings {
+    height: 800px;
+}
+
+.white{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    padding: 0;
+}
+
+.lighter {
+    font-size: small;
+}
+
+
+.flex {
+    display: flex;
+    
+}
+
+.purple {
+    border-left: 50px solid purple;
+    padding: 5px;
+    margin-left: 290px;
+}
+
+.blue {
+    border-left: 50px solid slateblue;
+    padding: 5px;
+}
+
+.boo a {
+    margin-bottom: 100px;
+}

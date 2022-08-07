@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/css-grid.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script>
+    window.onload = function () { };
+  </script>
+</head>
+
+<body>
+  <section class="container  center">
+
+    <div class="welcome">
+
+      <img src="../images/Mumz Wiki.png" alt="">
+    </div>
+
+    <p class="lighter col-4-sm center">Find private or public clinics, hospitals and doctors near you in a click of a
+      button. The purple pins present the public Health Care Centers whilst the blue pins present the Private Health
+      Care Centers.</p>
+    </div>
+    <div class="welcome">
+
+      <!-- <a href="#maps">SHOW HEALTH CARE CENTERS</a> -->
+    </div>
+    <div id="maps">
+      <div class="welcome center flex">
+        <div class="purple">
+          <p class="lighter">Public Health Care</p>
+        </div>
+        <div class="blue">
+          <p class="lighter">Private Health Care</p>
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <div id="map" class="center" style="width: 500px; height: 250px"></div>
+      <div class="welcome boo">
+        <a href="../index.html">GO BACK HOME</a>
+      </div>
+
+    </div>
+
+  </section>
+  <script>
+    function initMap() {
+      const iconBase = "http://maps.google.com/mapfiles/kml/pushpin/";
+      const icons = {
+        private: {
+          icon: iconBase + "purple-pushpin.png",
+          scaledSize: new google.maps.Size(30, 30),
+
+        },
+        public: {
+          icon: iconBase + "pink-pushpin.png",
+
+        }
+      };
+
+      var map_parameters = {
+        center: { lat: -28.46901, lng: 26.4137 },
+        zoom: 5.2,
+      };
+      var map = new google.maps.Map(
+        document.getElementById("map"),
+        map_parameters
+      );
+
+      var grooteSchuur = new google.maps.Marker(
+        {
+          position: { lat: -33.94076, lng: 18.46148 },
+          icon: icons["public"].icon,
+          map: map
+        });
+      var chrisBarnaard = new google.maps.Marker({
+        position: { lat: -33.91699, lng: 18.43091 },
+        icon: icons["private"].icon,
+
+        map: map,
+      });
+      var somerset = new google.maps.Marker({
+        position: { lat: -33.9044, lng: 18.41722 },
+        icon: icons["private"].icon,
+
+        map: map,
+      });
+      var chrisHani = new google.maps.Marker({
+        position: { lat: -26.259960, lng: 27.944183 },
+        icon: icons["public"].icon,
+
+        map: map,
+      });
+      var mantsopa = new google.maps.Marker({
+        position: { lat: -29.192490, lng: 27.455423 },
+        icon: icons["private"].icon,
+
+        map: map,
+      });
+      var hillcrest = new google.maps.Marker({
+        position: { lat: -29.789614, lng: 30.741924 },
+        icon: icons["public"].icon,
+
+        map: map,
+      });
+      var frere = new google.maps.Marker({
+        position: { lat: -32.59, lng: 27.53 },
+        icon: icons["public"].icon,
+
+        map: map,
+      });
+      var tshiawelo = new google.maps.Marker({
+        position: { lat: -26.27875, lng: 27.83729 },
+        icon: icons["private"].icon,
+
+        map: map,
+      });
+      var maitland = new google.maps.Marker({
+        position: { lat: -33.92018, lng: 18.48334 },
+        icon: icons["public"].icon,
+
+        map: map,
+      });
+      var lapamunnik = new google.maps.Marker({
+        position: { lat: -33.02353, lng: 18.99361 },
+        icon: icons["public"].icon,
+
+        map: map,
+      });
+      var kenhardt = new google.maps.Marker({
+        position: { lat: -29.35678, lng: 21.16252 },
+        icon: icons["private"].icon,
+
+        map: map,
+      });
+      var lousTrichardt = new google.maps.Marker({
+        position: { lat: -23.02355, lng: 29.89969 },
+        icon: icons["public"].icon,
+
+        map: map,
+      });
+      var rustenburg = new google.maps.Marker({
+        position: { lat: -25.67582, lng: 27.24175 },
+        icon: icons["private"].icon,
+
+        map: map,
+      });
+      var tshwaragano = new google.maps.Marker({
+        position: { lat: -27.39775, lng: 23.49193 },
+        icon: icons["public"].icon,
+
+        map: map,
+      });
+      var beaufortWest = new google.maps.Marker({
+        position: { lat: -32.3495, lng: 22.60854 },
+        icon: icons["public"].icon,
+
+        map: map,
+      });
+      var kimberly = new google.maps.Marker({
+        position: { lat: -28.74355, lng: 24.78032 },
+        icon: icons["public"].icon,
+
+        map: map,
+      });
+
+    }
+    window.initMap = initMap;
+
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcEBnoDYJ_s2QsPYhaqox1fgUXPTDMSd0&callback=initMap"></script>
+
+
+  <!-- </form> -->
+</body>
+
+</html>
